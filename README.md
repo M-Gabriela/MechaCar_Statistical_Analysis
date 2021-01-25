@@ -58,19 +58,13 @@ Performing t-tests to determine if all manufacturing lots and each lot individua
  
  ## Study Design: MechaCar vs Competition
  
- Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+To determine how MechaCar performs against the competition and using the vehicle's cost as one of the metrics to analyze, we could define the following null and alternative hypothesis:
 
-Use the statistical cheat sheet below to help you in your statistical design.
+Null Hypothesis - H0: Mean MechaCar cost is lesser or equal than the mean cost of competitor. 
+Alternative Hypothesis - HA: Mean MechaCar cost is greater than the mean cost of competitor. 
 
-You will earn a perfect score for Deliverable 4 by completing all requirements below:
+Since it's one continuous variable to analyze, and we would have two samples, MechaCar costs, and competitors' costs, we should do a Two-Sample t-Test to see if there is a statistical difference between the distribution means from the two. 
 
-The statistical study design has the following:
-A metric to be tested is mentioned (5 pt)
-A null hypothesis or an alternative hypothesis is described (5 pt)
-A statistical test is described to test the hypothesis (5 pt)
-The data for the statistical test is described (5 pt)
+To run this test, we would need a dataset that contains a column for "vehile_cost", and another column for vehicle_brand: "MechaCar" & "Competitor", and perform the Two-Sample t-test with: 
+
+t.test(data$vehicle_cost[vehicle_brand$vehicle_brand == 'MechaCar'], data$vehicle_cost[vehicle_brand$vehicle_brand == 'Competitor']
