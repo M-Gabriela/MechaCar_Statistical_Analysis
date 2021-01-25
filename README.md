@@ -35,21 +35,25 @@ Performing t-tests to determine if all manufacturing lots and each lot individua
 - The p-value across all lots is 0.06, and assuming a significance level of 0.05 percent, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 
 ![image_name](Resources/t-test_across_all_lots.png)
+
 *Fig.4 t-test across all lots*
 
 - The p-value for Lot 1 is 1, and assuming a significance level of 0.05 percent, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 
 ![image_name](Resources/t-test_lot1.png)
+
 *Fig.5 t-test on Lot 1*
 
 - The p-value for Lot 2 is 0.61, and assuming a significance level of 0.05 percent, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 
 ![image_name](Resources/t-test_lot2.png)
+
 *Fig.6 t-test on Lot 2*
 
 - The p-value for Lot 3 is 0.042, and assuming a significance level of 0.05 percent, our p-value is lower than the significance level; therefore, we have sufficient evidence to reject the null hypothesis and state that the two means are statistically different.
 
 ![image_name](Resources/t-test_lot3.png)
+
 *Fig.7 t-test on Lot 3*
  
  ## Study Design: MechaCar vs Competition
